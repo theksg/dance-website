@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+}
+
+
+.navbar{
+    display: flex;
+    position: sticky;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.navbar img{
+    height: 65px;
+    width: 65px;
+    margin: 0px 10px
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li{
+    list-style: none;
+    margin: auto 10px;
+}
+
+.navbar ul li a{
+    transition: 0.5s ease-out;
+}
+
+.navbar ul li a:hover{
+    color:white;
+    background-color: black;
+    display: block;
+    padding: 0px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.home{
+    display: flex;
+    max-width: 80%;
+    margin: 26px auto;
+    border: 2px dashed;
+    border-radius: 7px;
+    margin-top: 100px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: center;
+    margin: auto 10px;
+    width: 100%;
+}
+
+.right{
+    display:flex;
+    max-width: 60%;
+    width: 100%;
+}
+
+.right img{
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 2px 8px 16px black;
+}
+
+.left h2{
+    margin: auto;
+    font-size: 40px;
+}
+
+.information{
+    list-style: none;
+}
+
+.classes{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    max-width: 80%;
+    margin: 26px auto;
+    border: 2px dashed;
+    border-radius: 7px;
+    overflow:hidden;
+}
+
+.classes h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 18px auto;
+}
+
+.classes hr{
+    border-top: 1px dashed;
+    border-top: 2px dashed;
+}
+
+.class-card{
+    display: flex;
+}
+
+
+
+
+.sponsor {
+    display: flex;
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.sponsor img{
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 16px black;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+.classes input,textarea{
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 8px 11px black;
+    text-indent: 10px;
+}
+
+.classes form{
+    max-width: 60%;
+    margin: 0px auto;
+}
+
+.classes button{
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 8px 16px black;
+    transition: 1s ease-in-out;
+}
+
+.classes button:hover{
+    padding: 15px;
+    transition: 1s ease-in-out;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}
+
+
+.contact-frame{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactCards{
+    display: flex;
+}
+
+.contact-card li,.contact-card ul{
+    color: white;
+    background-color: black;
+}
+
+.contact-card{
+    margin: 33px auto;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 8px 16px black;
+    width: 200px;
+}
+
+.contact-card ul{
+    list-style: none;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.address{
+    margin: 40px;
+    box-shadow: 2px 8px 16px black;
+}
+
+.logos{
+    display: flex;
+    background-color: black;
+}
+
+.logos img{
+    display: block;
+    height: 60px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.logos a{
+    background-color: black;
+    margin: auto
+}
+
+.contact-card ul li{
+    text-align: center;
+}
+
+#wa1,#wa2,#mail1,#mail2{
+    height: 70px;
+    transition: 1s ease-in-out;
+}
+
+#wa1:hover,#wa2:hover,#mail1:hover,#mail2:hover{
+    transition: 1s ease-in-out;
+    height: 80px;
+}
+
+
+.test-shine {
+    width: 435px;
+    height: 318px;
+    background-color: #337bb2;
+    background-image: url('https://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg');
+    background-repeat: no-repeat;
+    position:absolute;
+    top:0px;
+    left: 40%;
+    margin: 25px 0 25px 25px;
+    border-radius: 5px;
+  
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .test-shine:after {
+    content: "";
+    position: absolute;
+      top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover state - trigger effect */
+  .test-shine:hover:after {
+    opacity: 1;
+    left: 130%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
+  /* Active state */
+  .test-shine:active:after {
+    opacity: 0;
+  }
+  

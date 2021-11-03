@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title> Dance With Us!!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>$(document).ready(function(){$("a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();var hash = this.hash;      $('html, body').animate({scrollTop: $(hash).offset().top-80}, 1000, function(){ window.location.hash = hash; });}}); });</script>
+        style
+            include ../static/style.css
+        
+    </head>
+    <body>
+        <div class="navbar" id="navbar">
+            <img src="../static/images/53546-3-girl-dance-free-hq-image.png" alt="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#classes">CLASSES</a></li>
+                <li><a href="#Sponsors">SPONSORS</a></li>
+                <li><a href="#Registeration">REGISTER</a></li>
+                <li><a href="#Contact">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div class="home" id="home">
+            <div class="left">
+                <h2>One Dance Academy</h2>
+                <p>One Dance Academy is joint initiative between various dance teaching organizations to teach dance forms to all the intrested people</p>
+            </div>
+            <div class="right">
+                <img src="../static/images/introImage.webp" alt="">
+            </div>
+        </div>
+
+        <div class="classes" id="classes">
+            <h1>Classes</h1>
+            <hr>
+            <div class="class-card">
+                <div class="right">
+                    <img src="../static/images/jazzDance.jpg" alt="">
+                </div>
+                <div class="left">
+                    <h2>Jazz</h2>
+                    <ul class="information">
+                        <li>Rs 100 per class</li>
+                        <li>3 classes per week</li>
+                        <li>8PM to 10PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="class-card">
+                <div class="left">
+                    <h2>Bharatnatyam</h2>
+                    <ul class="information">
+                        <li>Rs 100 per class</li>
+                        <li>3 classes per week</li>
+                        <li>8PM to 10PM</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="../static/images/classical.jpg" alt="">
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="right">
+                    <img src="../static/images/folkDance.jpg" alt="">
+                </div>
+                <div class="left">
+                    <h2>Folk Dance</h2>
+                    <ul class="information">
+                        <li>Rs 100 per class</li>
+                        <li>3 classes per week</li>
+                        <li>8PM to 10PM</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="class-card">
+                <div class="left">
+                    <h2>Hip Hop</h2>
+                    <ul class="information">
+                        <li>Rs 100 per class</li>
+                        <li>3 classes per week</li>
+                        <li>8PM to 10PM</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="../static/images/hiphopDance.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="classes" id="Sponsors">
+            <h1>Sponsors</h1>
+            <hr>
+            <div class="sponsor">
+                <img src="../static/images/sponsor1.jpg" alt="sponsor logo">
+                <img src="../static/images/sponsor2.webp" alt="sponsor logo">
+                <img src="../static/images/sponsor3.jpg" alt="sponsor logo">
+                <img src="../static/images/sponsor4.jpg" alt="sponsor logo">
+                <img src="../static/images/sponsor5.jpg" alt="sponsor logo">
+            </div>
+        </div>
+
+        <div class="classes" id="Registeration">
+            <h1>Registeration Form</h1>
+            <hr>
+            <div class="form-page">
+                <form method="post" action="/submit">
+                    <input type="text" name="name" placeholder="Enter Your Name" required="required">
+                    <input type="text" name="danceForm" placeholder="Enter Dance Form You Wish To Learn" required="required">
+                    <input type="number" name="mobile" placeholder="Enter Your Mobile Number" required="required">
+                    <input type="email" name="mail" placeholder="Enter Your E-Mail ID" required="required">
+                    <textarea name="description"  cols="30" rows="10" placeholder="Enter any Query or Preferences you wish to share"></textarea>
+                    <button id="bt1">Submit</button>
+    
+                </form>
+            </div>
+        </div>
+            
+        <div class="classes" id="Contact">
+            <h1>Contact Us</h1>
+            <hr>
+            <div class="contact-frame">
+            <div class="contactCards">
+                <div class="contact-card">
+                    <ul>
+                        <li>Mr Remo DSouza</li>
+                        <li>Senior Choreographer</li>
+                        <li>
+                            <div class="logos">
+                                <a  href="//api.whatsapp.com/send?phone=918851728643 " title="Chat on Whatsapp"><img src="../static/images/whatsapp.png" alt="whatsapp" class="img1" id="wa1"></a>
+                                <a href="mailto:theksg2k@gmail.com"><img src="../static/images/mailLogo.png" title="Send Mail" alt="mail" id="mail1"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-card">
+                    <ul>
+                        <li>Mr Saksham Gupta</li>
+                        <li>Bussiness Manager</li>
+                        <li>
+                            <div class="logos">
+                                <a  href="//api.whatsapp.com/send?phone=918851728643" title="Chat on Whatsapp"><img src="../static/images/whatsapp.png" alt="whatsapp" class="img1" id="wa2"></a>
+                                <a href="mailto:theksg2k@gmail.com"><img src="../static/images/mailLogo.png" title="Send Mail" alt="mail" id="mail2"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="address">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55895.18979104743!2d77.12276480000001!3d28.884992000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dac771b310b15%3A0x911cde8b7787117d!2sGurdwara%20Baba%20Buddha%20Ji%20TDI%20City!5e0!3m2!1sen!2sin!4v1631892392046!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+        </div>
+        
+
+        <footer>TheKSG Built</footer>
+    </body>
+</html>
