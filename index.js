@@ -5,7 +5,7 @@ const port=80;
 
 app.use(express.urlencoded())
 
-var env = require('dotenv').config({ path: 'D:\\webD\\nodeLearning\\danceWebSite\\.gitignore\\.env' })
+var env = require('dotenv').config()
 //EXPRESS SPECEFIC STUFF
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
