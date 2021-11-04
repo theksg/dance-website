@@ -5,6 +5,7 @@ const port=80;
 
 app.use(express.urlencoded())
 
+var env = require('dotenv').config({ path: 'D:\\webD\\nodeLearning\\danceWebSite\\.gitignore\\.env' })
 //EXPRESS SPECEFIC STUFF
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
@@ -52,7 +53,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'theksg2k@gmail.com',
-    pass: 'eM@IL2000'
+    pass:String(process.env.PWRD)
   }
 });
 
@@ -62,7 +63,7 @@ app.post('/submit',(req,res)=>{
         from: 'theksg2k@gmail.com',
         to: member_mail_id,
         subject: 'One Dance Academy Registration',
-        text: 'Thanks for registering with One Dance Academy!!!\n Soon our associate will come in contact with you'
+        text: 'Thanks for registering with One Dance Academy!!!\nSoon our associate will come in contact with you'
       };
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
